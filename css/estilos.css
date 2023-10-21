@@ -3,6 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+*::selection {
+    background-color: rgb(168, 139, 160);
+    color: black;
+}
+
 :root{
     scroll-behavior: smooth;
 }
@@ -20,10 +26,67 @@ body {
     padding: 60px 0;
 }
 
-header{
-    height: 100vh;
-    background-image: linear-gradient(to top, rgba(199, 144, 129, 0.425) 0%, rgba(223, 165, 121, 0.438) 100%), url(img/img-portada.jpg);
+/* .menu {
+    border: solid black 2px;
+    background-image: url(/img/conversando.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center ;
+} */
 
+.menuPadre {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid black;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menuHijo {
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid black; */
+    width: 25%;
+    min-width: 250px;
+    position: relative;
+    overflow: hidden; /* Ocultar contenido que exceda el contenedor */
+}
+
+.imagen {
+    position: relative;
+}
+
+.imagen img {
+    width: 100%;
+    border-radius: 0%;
+    perspective: 1000px;
+    /* border: black solid 2px; */
+}
+
+.descripcion {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Oculta la descripción por defecto */
+    transition: opacity 0.3s;
+}
+
+.imagen:hover .descripcion {
+    opacity: 1; /* Muestra la descripción al hacer hover */
+}
+
+
+header{
+    height: 10vh; /*lo bajo de 100 a 10 temporalmente para ver mejor*/
+    background-image: linear-gradient(to top, rgba(199, 144, 129, 0.425) 0%, rgba(223, 165, 121, 0.438) 100%), url(img/img-portada.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -136,7 +199,7 @@ header{
     justify-content: center;
     align-items: center;
     transform: translate(100%);
-    transition: transform .2s ease-in-out:
+    transition: transform .2s ease-in-out;
 }
 
 .show{
@@ -229,6 +292,7 @@ font-size: 40px;
     background: rgb(170, 56, 4);
     margin-bottom: 60px;
 }
+
 
 @media screen and (max-width:800px){
     .menu-navegacion{
