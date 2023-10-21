@@ -85,8 +85,9 @@ body {
 
 
 header{
-    height: 10vh; /*lo bajo de 100 a 10 temporalmente para ver mejor*/
-    background-image: linear-gradient(to top, rgba(199, 144, 129, 0.425) 0%, rgba(223, 165, 121, 0.438) 100%), url(img/img-portada.jpg);
+    height: 100vh;
+    background-image: linear-gradient(120deg, rgba(246, 212, 101, 0.514) 0%, rgba(253, 159, 133, 0.486) 100%), url(../img/img-portada.jpg);
+
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -227,7 +228,7 @@ header{
 
 .footer{
   
-    background: #946204a4;
+    background: rgba(235, 171, 52, 0.651);
     padding-bottom: 0.1px;
     
 }
