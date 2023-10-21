@@ -303,3 +303,47 @@ font-size: 40px;
         width: 90%;
     }
 }
+
+/* Estilo para Formulario*/
+
+.form{
+    margin: 0 auto;
+    width: 300px;
+    background-color: #fff;
+    padding: 30px;
+    color: #0c0c0c;
+    font-size: 15px;
+}
+input, textarea{
+    border: 0;
+    outline: none;
+}
+.formulario{
+    border: solid 1px #999;
+    padding: 6px;
+
+}
+.boton{
+    text-align: center;
+}
+.contenedor-formulario{
+    background-color: #fff;
+}
+.btn{
+    border-radius: 3px;
+    display: inline-block;
+    padding: 20px 15px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgb(255, 255, 255, 0.3);
+    box-shadow: 0 1px 1px rgb(0, 0, 0, 0.3);
+}
+.btn-color{
+    color: #fff;
+    background-color: chocolate;
+}
+.btn-color:hover{
+    background-color: rgb(219, 107, 27);
+}
+.btn-color:active{
+    background-color: rgb(230, 104, 15);
+}

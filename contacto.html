@@ -32,21 +32,55 @@
         <div class="contacto">
             <!--agregar imagen--> 
         </div>
-        <div>
-             <!--formulario de contacto
-            Nombre y apellido
-            correo numero de telefino
-              cuadro de texto --> 
+        <div class="contenedor-formulario">
+            <form class="form">
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" placeholder="Nombre" id="nombre" class="formulario"><br>
+
+                <label for="apellido">Apellido:</label><br>
+                <input type="text" placeholder="Apellido" id="apellido" class="formulario"><br>
+
+                <label for="telefono">Numero de telefono:</label><br>
+                <input type="number" placeholder="Numero de telefono" id="telefono" class="formulario"><br>
+
+                <label for="correo">Correo:</label><br>
+                <input type="email" placeholder="Correo" id="correo" class="formulario"><br><br>
+
+                <label for="">Motivo del contacto:</label><br>
+                <input type="radio" name="motivo" value="a" class="formulario"> Consulta 
+                <input type="radio" name="motivo" value="i" class="formulario"> Trabajo
+                <input type="radio" name="motivo" value="e" class="formulario"> Disgusto
+                <br><br>
+
+                <label for="descripcion">Ingrese su consulta</label><br>
+                <textarea name="descripcion" placeholder="Texto" rows="8" cols="40" id="descripcion" class="formulario"></textarea><br>
+
+                <label for="">Adjunte archivo</label>
+                <input type="file" name="archivo" value="" class="formulario"><br><br>
+
+               <p class="boton">
+                <Input type="submit" value="Enviar" class="btn btn-color" id="boton">
+                </p>
+
+
+
+
+
+
+
+
+            </form>
+          
              
         </div>
 
     </section>
 
-    <footer id="redes">
+    <footer id="redes" class="footer">
         
         <div class="contenedor footer-content">
-            <div class="Marca">
-                <h2 class="cafe-historias">Cafe con historias </h2>
+            <div class="contacto-usuario">
+                <h3 class="marca">Cafe con historias </h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, eos!</p>
             </div>
             <div class="redes-sociales">
@@ -67,10 +101,12 @@
             </div>
             
           </div>
+          <div class="line"></div>
      </footer>
    
      <script src="script.js/menu.js"></script>
      <script src="script.js/pagina.js"></script>
+     <script src="script.js/ligtbox.js"></script>
 
     
 </body>
