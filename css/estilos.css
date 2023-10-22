@@ -153,10 +153,19 @@ header{
 .subtitulo{
     text-align: center;
     font-weight: 300;
+    font-weight: bold;
     color: chocolate;
     margin-bottom: 40px;
     font-size: 40px;
 }
+.sidetext{
+    text-align: center;
+font-weight: 300;
+color: chocolate;
+margin-bottom: 40px;
+font-size: 40px;
+}
+
 .contenedor-cafe{
     display: flex;
     justify-content: space-evenly;
