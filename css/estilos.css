@@ -26,42 +26,40 @@ body {
     padding: 60px 0;
 }
 
-/* .menu {
-    border: solid black 2px;
-    background-image: url(/img/conversando.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center ;
-} */
-
 .menuPadre {
     display: flex;
     justify-content: space-around;
     border: 1px solid black;
     flex-wrap: wrap;
     justify-content: center;
+    background-image: url(/img/menuFondo2.jpg);
+    background-size: contain;
 }
 
 .menuHijo {
     display: flex;
     flex-direction: column;
-    /* border: 2px solid black; */
-    width: 25%;
+    width: 22%;
     min-width: 250px;
     position: relative;
-    overflow: hidden; /* Ocultar contenido que exceda el contenedor */
+    overflow: hidden;
+    cursor: pointer;
+    padding: 0.2%;
 }
 
-.imagen {
+.imagenMenu {
     position: relative;
 }
 
-.imagen img {
+.imagenMenu img {
     width: 100%;
-    border-radius: 0%;
+    height: auto;
+    border: solid white 5px;
+    border-radius: 45%;
     perspective: 1000px;
-    /* border: black solid 2px; */
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+    aspect-ratio: 1/1;
+    background-color: #b9b4ac;
 }
 
 .descripcion {
@@ -70,22 +68,24 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente */
+    background: rgba(0, 0, 0, 0.7);
     color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity: 0; /* Oculta la descripción por defecto */
+    opacity: 0; 
     transition: opacity 0.3s;
+    font-size: 1.2em;
+    font-weight: bold;
 }
 
-.imagen:hover .descripcion {
-    opacity: 1; /* Muestra la descripción al hacer hover */
+.imagenMenu:hover .descripcion {
+    opacity: 1;
 }
 
 
 header{
-    height: 100vh;
+    height: 50vh;
     background-image: linear-gradient(120deg, rgba(246, 212, 101, 0.514) 0%, rgba(253, 159, 133, 0.486) 100%), url(../img/img-portada.jpg);
 
     background-repeat: no-repeat;
@@ -131,6 +131,7 @@ header{
     box-shadow: 0 0 6px rgb(0, 0, 0, .5);
     transition: transform .3s ease-in-out;
     transform: translate(100%);
+    z-index: 1000;
 }
 .spread{
     transform: translate(0);
