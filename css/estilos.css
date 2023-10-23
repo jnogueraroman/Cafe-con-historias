@@ -3,6 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+*::selection {
+    background-color: rgb(168, 139, 160);
+    color: black;
+}
+
 :root{
     scroll-behavior: smooth;
 }
@@ -20,9 +26,67 @@ body {
     padding: 60px 0;
 }
 
+.menuPadre {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid black;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-image: url(/img/menuFondo2.jpg);
+    background-size: contain;
+}
+
+.menuHijo {
+    display: flex;
+    flex-direction: column;
+    width: 22%;
+    min-width: 250px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    padding: 0.2%;
+}
+
+.imagenMenu {
+    position: relative;
+}
+
+.imagenMenu img {
+    width: 100%;
+    height: auto;
+    border: solid white 5px;
+    border-radius: 45%;
+    perspective: 1000px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+    aspect-ratio: 1/1;
+    background-color: #b9b4ac;
+}
+
+.descripcion {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; 
+    transition: opacity 0.3s;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.imagenMenu:hover .descripcion {
+    opacity: 1;
+}
+
+
 header{
-    height: 100vh;
-    background-image: linear-gradient(to top, rgba(199, 144, 129, 0.425) 0%, rgba(223, 165, 121, 0.438) 100%), url(img/img-portada.jpg);
+    height: 50vh;
+    background-image: linear-gradient(120deg, rgba(246, 212, 101, 0.514) 0%, rgba(253, 159, 133, 0.486) 100%), url(../img/img-portada.jpg);
 
     background-repeat: no-repeat;
     background-size: cover;
@@ -67,6 +131,7 @@ header{
     box-shadow: 0 0 6px rgb(0, 0, 0, .5);
     transition: transform .3s ease-in-out;
     transform: translate(100%);
+    z-index: 1000;
 }
 .spread{
     transform: translate(0);
@@ -88,10 +153,19 @@ header{
 .subtitulo{
     text-align: center;
     font-weight: 300;
+    font-weight: bold;
     color: chocolate;
     margin-bottom: 40px;
     font-size: 40px;
 }
+.sidetext{
+    text-align: center;
+font-weight: 300;
+color: chocolate;
+margin-bottom: 40px;
+font-size: 40px;
+}
+
 .contenedor-cafe{
     display: flex;
     justify-content: space-evenly;
@@ -136,7 +210,7 @@ header{
     justify-content: center;
     align-items: center;
     transform: translate(100%);
-    transition: transform .2s ease-in-out:
+    transition: transform .2s ease-in-out;
 }
 
 .show{
@@ -164,7 +238,7 @@ header{
 
 .footer{
   
-    background: #946204a4;
+    background: rgba(235, 171, 52, 0.651);
     padding-bottom: 0.1px;
     
 }
@@ -229,6 +303,7 @@ font-size: 40px;
     background: rgb(170, 56, 4);
     margin-bottom: 60px;
 }
+
 
 @media screen and (max-width:800px){
     .menu-navegacion{
