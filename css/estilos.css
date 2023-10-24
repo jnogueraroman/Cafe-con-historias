@@ -135,7 +135,6 @@ header{
     top: 0;
     right: 0;
     width: 20vw;
-    width: 20vw;
     height: 100%;
     background-image: linear-gradient(to top, #e6b980 0%, #eacda3 100%);
     display: flex;
@@ -158,7 +157,6 @@ header{
 }
 
 .menu-navegacion a::before{
-    content: "• ";
     color: rgb(70, 47, 47);
     margin-right: 5px;
 }
@@ -236,14 +234,12 @@ font-size: 40px;
     transition: transform .2s ease-in-out;
 }
 
-.contacto contenedor
-
 .show{
-    transform: scale(1);
+    transform: translate(0);
 }
 .agregar-imagen{
     object-fit: cover;
-    width: 50%;
+    width: 30%;
     border-radius: 10px;
     transform: scale(0);
     transition: transform .3s .2s;
