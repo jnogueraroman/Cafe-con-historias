@@ -121,7 +121,7 @@ header{
     position: fixed;
     top: 0;
     right: 0;
-    width: 30vw;
+    width: 20vw;
     height: 100%;
     background-image: linear-gradient(to top, #e6b980 0%, #eacda3 100%);
     display: flex;
@@ -137,8 +137,9 @@ header{
     transform: translate(0);
 }
 .menu-navegacion a{
-    color: #fff;
+    color: #6b6a6a;
     text-decoration: none;
+    font-size: 25px;
 }
 .titulo{
     font-size: 60px;
@@ -422,3 +423,46 @@ input, textarea{
 .btn-color:active{
     background-color: rgb(230, 104, 15);
 }
+
+/* estilos de comentarios... API*/
+
+.tarjeta{
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+    border: 1px solid rgb(15, 15, 15);
+    border-radius: 15px;
+    padding: 10px;
+    width: 300px;
+    background-color: rgb(240, 142, 72);
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+}
+.boton-1{
+    color: #0a0a0ae5;
+    
+    box-shadow: 0 0 0 0 rgba(235, 164, 32, 0.7), 0 0 0 0 rgba(238, 100, 45, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    background: #ecb46b;
+    font-size: 25px;
+}
+.boton-1::after{
+    content: "";
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: -50px;
+    left: -100px;
+    background: #13ff13;
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    z-index: -1;
+    transition: transform 0.5s ease;
+}
+.boton-1:hover{
+    transform: translate(0, -6px);
+    box-shadow: 10px -10px 25px 0 rgba(238, 100, 45, 0.5), -10px 10px 25px rgba(235, 164, 32, 0.7);
+}
+.boton-1:hover::after{
+    transform: rotate(150deg);
+}
+
