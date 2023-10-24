@@ -26,6 +26,19 @@ body {
     padding: 60px 0;
 }
 
+.contactoPadre{
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid black;
+}
+
+.contactoHijo{
+    border: solid rgb(134, 35, 35) 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+
 .menuPadre {
     display: flex;
     justify-content: space-around;
@@ -110,7 +123,7 @@ header{
     top: 30px;
     right: 30px;
     width: 40px;
-    height: 40;
+    height: 40px;
     background: #fff;
     cursor: pointer;
     border-radius: 10px;
@@ -121,7 +134,7 @@ header{
     position: fixed;
     top: 0;
     right: 0;
-    width: 30vw;
+    width: 20vw;
     height: 100%;
     background-image: linear-gradient(to top, #e6b980 0%, #eacda3 100%);
     display: flex;
@@ -133,13 +146,22 @@ header{
     transform: translate(100%);
     z-index: 1000;
 }
+
 .spread{
     transform: translate(0);
 }
 .menu-navegacion a{
     color: #fff;
     text-decoration: none;
+    font-size: 1.4em;
 }
+
+.menu-navegacion a::before{
+    content: "• ";
+    color: rgb(70, 47, 47);
+    margin-right: 5px;
+}
+
 .titulo{
     font-size: 60px;
     margin-bottom: 15px;
@@ -212,6 +234,8 @@ font-size: 40px;
     transform: translate(100%);
     transition: transform .2s ease-in-out;
 }
+
+.contacto contenedor
 
 .show{
     transform: scale(1);
@@ -287,13 +311,10 @@ font-size: 40px;
 }
 
 
-
 .contacto-usuario{
     width: 40%;
     color: #fff;
 }
-
-
 
 .line{
     width: 90%;
@@ -307,7 +328,7 @@ font-size: 40px;
 
 @media screen and (max-width:800px){
     .menu-navegacion{
-        width: 50vw;
+        width: 35vw;
     }
     .titulo{
         font-size: 40px;
@@ -348,7 +369,7 @@ font-size: 40px;
 
 @media screen and (max-width:500px){
     .menu-navegacion{
-        width: 65vw;
+        width: 50vw;
     }
     .agregar-imagen{
         width: 95%;
@@ -366,7 +387,7 @@ font-size: 40px;
         margin-bottom: auto;
     }
     .copy{
-        font-size: 30px;
+        font-size: 20px;
     }
     .imag-galeria{
         width: 95%;

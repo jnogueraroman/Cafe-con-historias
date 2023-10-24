@@ -28,20 +28,54 @@
         </div>
     </header>
 
-    <section class="contacto contenedor" id="Contacto">
-        <h2 class="subtitulo"> Una pagina de contacto que te lee y te responde</h2>
-        <div class="contacto">
-            <!--agregar imagen--> 
-        </div>
-        <div>
-             <!--formulario de contacto
-            Nombre y apellido
-            correo numero de telefino
-              cuadro de texto --> 
-             
-        </div>
+    <main>
+        <section class="contenedor" id="Contacto">
+            <h2 class="subtitulo"> Una pagina de contacto que te lee y te responde</h2>
+            <div class="contactoPadre"> 
+                <div class="contactoHijo">
+                    <h3>fdsf</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1380.901019865125!2d-58.444095581886316!3d-34.59519286306449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5f58038d517%3A0x2132ca7e220eae8c!2sThames%20530%2C%20C1414%20Villa%20Crespo%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1698029027710!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="contactoHijo">
+                    <form class="form">
+                        <label for="nombre">Nombre:</label><br>
+                        <input type="text" placeholder="Nombre" id="nombre" class="formulario"><br>
+        
+                        <label for="apellido">Apellido:</label><br>
+                        <input type="text" placeholder="Apellido" id="apellido" class="formulario"><br>
+        
+                        <label for="telefono">Numero de telefono:</label><br>
+                        <input type="number" placeholder="Numero de telefono" id="telefono" class="formulario"><br>
+        
+                        <label for="correo">Correo:</label><br>
+                        <input type="email" placeholder="Correo" id="correo" class="formulario"><br><br>
+        
+                        <label for="">Motivo del contacto:</label><br>
+                        <input type="radio" name="motivo" value="a" class="formulario"> Consulta 
+                        <input type="radio" name="motivo" value="i" class="formulario"> Trabajo
+                        <input type="radio" name="motivo" value="e" class="formulario"> Disgusto
+                        <br><br>
+        
+                        <label for="descripcion">Ingrese su consulta</label><br>
+                        <textarea name="descripcion" placeholder="Texto" rows="8" cols="40" id="descripcion" class="formulario"></textarea><br>
+        
+                        <label for="">Adjunte archivo</label>
+                        <input type="file" name="archivo" value="" class="formulario"><br><br>
+        
+                       <p class="boton">
+                        <Input type="submit" value="Enviar" class="btn btn-color" id="boton">
+                        </p>
+                    <!--formulario de contacto
+                    Nombre y apellido
+                    correo numero de telefino
+                    cuadro de texto --> 
+                </div>
+            </div> 
+        </section>
 
-    </section>
+
+
+        </main>
 
     <footer id="redes" class="footer">
         
@@ -73,7 +107,7 @@
    
      <script src="script.js/menu.js"></script>
      <script src="script.js/pagina.js"></script>
-
+     <script src="script.js/ligtbox.js"></script>
     
 </body>
 </html>
