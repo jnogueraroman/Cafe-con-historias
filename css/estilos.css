@@ -18,6 +18,15 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+warnings{
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: #e6b980;
+    padding-top: 20px;
+}
+
+
 .contenedor{
     width: 100%;
     max-width: 1200px;
