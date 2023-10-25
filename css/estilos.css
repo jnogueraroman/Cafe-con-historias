@@ -11,21 +11,14 @@
 
 :root{
     scroll-behavior: smooth;
+    --colorTexto: #0c0c0c;
+
 }
 
 body {
     font-family: 'Croissant One', serif;
     font-family: 'Open Sans', sans-serif;
 }
-
-warnings{
-    width: 200px;
-    text-align: center;
-    margin: auto;
-    color: #e6b980;
-    padding-top: 20px;
-}
-
 
 .contenedor{
     width: 100%;
@@ -35,6 +28,63 @@ warnings{
     padding: 60px 0;
 }
 
+
+/* html contacto*/
+
+.warnings{
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: #e6b980;
+    padding-top: 20px;
+}
+ iframe{
+    justify-content: center;
+    align-items: center;
+ }
+.ubicacion{
+    justify-content: center;
+    align-items: center;
+    color: #0a0a0a;
+}
+form{
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    padding: 40px 0;
+    box-shadow: 0 0 6px;
+    border-radius: 10px;
+}
+form.formulario{
+    position: absolute;
+    margin: 45px;
+
+}
+input{
+    background: none;
+    color: hwb(0 5% 95%);
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--colorTextos)
+}
+
+.comentario{
+    background-color: #13ff13;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    border: 2px;
+    color: #0c0c0c;
+
+}
+textarea{
+    resize: none;
+    border: 2px;
+    color: #0c0c0c;
+
+}
+
+
 .contactoPadre{
     display: flex;
     justify-content: space-around;
@@ -42,13 +92,17 @@ warnings{
 }
 
 .contactoHijo{
-    border: solid rgb(134, 35, 35) 5px;
+    
     display: flex;
     flex-direction: column;
+
 }
 
 
-.menuPadre {
+
+/* html menu */
+
+.menuPadre{
     display: flex;
     justify-content: space-around;
     border: 1px solid black;
@@ -58,7 +112,7 @@ warnings{
     background-size: contain;
 }
 
-.menuHijo {
+.menuHijo{
     display: flex;
     flex-direction: column;
     width: 22%;

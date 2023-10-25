@@ -5,18 +5,34 @@ const email = document.getElementById("email")
 const form = document.getElementById("form")
 const parrafo = document.getElementById("warning")
 
-form.addEventListener("submit", e=< {
+form.addEventListener("submit", e=> {
  e.preventDefault()
- let enviar =false
+ let boton =false
  let warnings = ""
  let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
- if(nombre.value.length <2){
-    warnings +=  'El nombre no es valido' <br>
-
- } 
+ 
+ parrafo.innerHTML = ""
+ if( nombre.value.length <2){
+    warnings +='El nombre no es valido' <br>
+    boton = true
+     }
+    if( apellido.value.length <2){
+      warnings +='El apellido no es valido' <br>
+      boton = true
+       }
+      if( telefono.value.length <10){
+         warnings +='El numero no es valido' <br>
+         boton = true
+      } 
 
  console.log (regexEmail.test(email.value))
  if(!regexEmail.test(email.value)){
     warnings +=  'El email no es valido' <br>
+ }
+ if(boton){
+   parrafo.innerHTML = warnings
+
+ } else{
+   parrafo.innerHTML = "ENVIADO NOS COMUNICAMOS A LA BREVEDAD"
  }
 })
