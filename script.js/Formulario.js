@@ -1,38 +1,46 @@
 const nombre = document.getElementById("nombre")
-const apellido = document.getElementById("apellido")
 const telefono = document.getElementById("telefono")
+const cantidad = document.getElementById("cantidad")
 const email = document.getElementById("email")
 const form = document.getElementById("form")
-const parrafo = document.getElementById("warning")
+const parrafo = document.getElementById("warnings")
 
-form.addEventListener("submit", e=> {
- e.preventDefault()
- let boton =false
- let warnings = ""
- let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
- 
- parrafo.innerHTML = ""
- if( nombre.value.length <2){
-    warnings +='El nombre no es valido' <br>
-    boton = true
-     }
-    if( apellido.value.length <2){
-      warnings +='El apellido no es valido' <br>
-      boton = true
-       }
-      if( telefono.value.length <10){
-         warnings +='El numero no es valido' <br>
-         boton = true
-      } 
+form.addEventListener("submit", e=>{
+  e.preventDefault()
 
- console.log (regexEmail.test(email.value))
- if(!regexEmail.test(email.value)){
-    warnings +=  'El email no es valido' <br>
- }
- if(boton){
-   parrafo.innerHTML = warnings
+  let warnings = ""
+  let entrar = false
+  let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+  parrafo.innerHTML = ""
 
- } else{
-   parrafo.innerHTML = "ENVIADO NOS COMUNICAMOS A LA BREVEDAD"
- }
+  if(nombre.value.length <2){
+    warnings += `El nombre no es valido <br>`
+    entrar = true
+  }
+  if(!regexEmail.test(email.value)){
+    warnings += `El email no es valido <br>`
+    entrar = true
+  }
+  if(telefono.value.length < 10){
+    warnings += `El numero de telefono no es valido <br>`
+    entrar = true
+  }
+  if(cantidad.value.length >2){
+    warnings += `La cantidad de personas no es valida <br>`
+    entrar = true
+  }
+  if(entrar){
+    parrafo.innerHTML = warnings
+  } else{
+    parrafo.innerHTML = `Su reserva fue enviada, nos comunicaremos a la brevedad`
+
+  }
+
+
+
+
+
+
+
+
 })
