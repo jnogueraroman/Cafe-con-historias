@@ -30,7 +30,7 @@ label{
     max-width: 1200px;
     overflow: hidden;
     margin: auto;
-    padding: 60px 0;
+    padding: 30px 0;
 }
 
 
@@ -232,7 +232,7 @@ header{
 }
 .head{
     text-align: center;
-    padding-left: 0;
+    padding: 0;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -305,10 +305,10 @@ header{
 }
 .sidetext{
     text-align: center;
-font-weight: 300;
-color: chocolate;
-margin-bottom: 40px;
-font-size: 40px;
+    font-weight: 300;
+    color: chocolate;
+    margin-bottom: 40px;
+    font-size: 40px;
 }
 
 .contenedor-cafe{
@@ -492,6 +492,14 @@ font-size: 40px;
     .contactoHijo{
         width: 80%;
     }
+    .tarjeta{
+        width: 5px;
+        margin: 5px;
+        padding: 5px;
+    }
+    .boton-1{
+        width: 80vw;
+    }
 }
 
 @media screen and (max-width:500px){
@@ -516,6 +524,9 @@ font-size: 40px;
     .copy{
         font-size: 20px;
     }
+    .sidetext{
+        font-size: 25px;
+    }
     .imag-galeria{
         width: 95%;
     }
@@ -533,6 +544,9 @@ font-size: 40px;
     }
     .contactoHijo{
         width: 100%;
+    }
+    .boton-1{
+        width: 80vw;
     }
 }
 
@@ -606,7 +620,7 @@ input, textarea{
 }
 .boton-1{
     color: #0a0a0ae5;
-    
+    cursor: pointer;
     box-shadow: 0 0 0 0 rgba(235, 164, 32, 0.7), 0 0 0 0 rgba(238, 100, 45, 0.5);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     overflow: hidden;
