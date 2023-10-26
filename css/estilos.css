@@ -19,6 +19,11 @@ body {
     font-family: 'Croissant One', serif;
     font-family: 'Open Sans', sans-serif;
 }
+label{
+    color: var(--colorTexto);
+    font-size: 16px;
+    padding-left: 18px;
+}
 
 .contenedor{
     width: 100%;
@@ -31,11 +36,12 @@ body {
 
 /* html contacto*/
 
+
 .warnings{
     width: 200px;
     text-align: center;
     margin: auto;
-    color: #e6b980;
+    color: #493902;
     padding-top: 20px;
 }
  iframe{
@@ -49,25 +55,19 @@ body {
 }
 form{
     background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
-    padding: 40px 0;
+    padding: 40px 30px;
     box-shadow: 0 0 6px;
     border-radius: 10px;
+    display: block;
+    
 }
+
 form.formulario{
-    position: absolute;
+    position: relative;
     margin: 45px;
 
 }
-input{
-    background: none;
-    color: hwb(0 5% 95%);
-    font-size: 18px;
-    padding: 10px 10px 10px 5px;
-    display: block;
-    width: 100%;
-    border: none;
-    border-bottom: 1px solid var(--colorTextos)
-}
+
 
 .comentario{
     background-color: #13ff13;
@@ -95,6 +95,7 @@ textarea{
     
     display: flex;
     flex-direction: column;
+    padding: 20px;
 
 }
 
@@ -462,23 +463,25 @@ font-size: 40px;
 
 /* Estilo para Formulario*/
 
-.form{
-    margin: 0 auto;
-    width: 300px;
-    background-color: #fff;
-    padding: 30px;
-    color: #0c0c0c;
-    font-size: 15px;
-}
-input, textarea{
+
+
+input{
     border: 0;
-    outline: none;
+    outline: #999;
+    width: 240px;
+    font-size: 18px;
+    border-bottom: 1px solid var(--colorTexto);
+    padding: 10px 10px 10px 5px;
+    margin: 15px;
+    display: block;
+    background: none;
 }
 .formulario{
     border: solid 1px #999;
     padding: 6px;
 
 }
+
 .boton{
     text-align: center;
 }
@@ -488,14 +491,17 @@ input, textarea{
 .btn{
     border-radius: 3px;
     display: inline-block;
-    padding: 20px 15px;
+    padding: 10px 5px;
+    width: 270px;
     text-decoration: none;
     text-shadow: 0 1px 0 rgb(255, 255, 255, 0.3);
     box-shadow: 0 1px 1px rgb(0, 0, 0, 0.3);
 }
+
 .btn-color{
     color: #fff;
     background-color: chocolate;
+    cursor: pointer;
 }
 .btn-color:hover{
     background-color: rgb(219, 107, 27);
