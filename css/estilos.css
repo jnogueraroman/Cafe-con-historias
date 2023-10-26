@@ -85,16 +85,26 @@ textarea{
 
 .contactoPadre{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     border: 1px solid black;
+    padding: 2%;
+    margin: 2%
 }
 
 .contactoHijo{
-    display: flex;
-    flex-direction: column;
+    width: auto;
 }
 
+.contactoHijo textarea {
+    width: 100%;
+    box-sizing: border-box;
+}
 
+.contactoHijo iframe {
+    width: 100%;
+    box-sizing: border-box;
+}
 
 /* html menu */
 
@@ -468,6 +478,9 @@ font-size: 40px;
     .historiaHijoImgDual{
         width: 90%;
     }
+    .contactoHijo{
+        width: 80%;
+    }
 }
 
 @media screen and (max-width:500px){
@@ -507,13 +520,16 @@ font-size: 40px;
     .historiaHijoImg{
         width: 90%;
     }
+    .contactoHijo{
+        width: 100%;
+    }
 }
 
 /* Estilo para Formulario*/
 
 .form{
     margin: 0 auto;
-    width: 300px;
+    width: 400px;
     background-color: #fff;
     padding: 30px;
     color: #0c0c0c;
