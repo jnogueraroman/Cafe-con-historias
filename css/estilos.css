@@ -75,15 +75,13 @@ input{
     display: block;
     border: 2px;
     color: #0c0c0c;
-
 }
+
 textarea{
     resize: none;
     border: 2px;
     color: #0c0c0c;
-
 }
-
 
 .contactoPadre{
     display: flex;
@@ -92,10 +90,8 @@ textarea{
 }
 
 .contactoHijo{
-    
     display: flex;
     flex-direction: column;
-
 }
 
 
@@ -158,6 +154,50 @@ textarea{
 .imagenMenu:hover .descripcion {
     opacity: 1;
 }
+
+/* html historia*/
+
+.historiaPadre {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.historiaHijoTxt{
+    width: 58%;
+}
+.historiaHijoImg{
+    width: 40%;
+}
+.historiaHijoTxtGde{
+    width: 100%;
+}
+.historiaHijoImgGde{
+    width: 90%;
+}
+.historiaHijoImgDual{
+    width: 48%;
+}
+
+.historiaHijoTxt, .historiaHijoTxtGde p{
+    padding: 1vh;
+    text-align: justify;
+    color: chocolate;
+    font-weight: 500;
+    font-size: 1em;
+}
+
+.historiaHijoImg img{
+    max-width: 100%;
+}
+.historiaHijoImgGde img{
+    max-width: 100%;
+}
+.historiaHijoImgDual img{
+    max-width: 100%;
+    height: 100%
+}
+
 
 
 header{
@@ -425,6 +465,9 @@ font-size: 40px;
         width: 80%;
         margin-bottom: 40px;
     }
+    .historiaHijoImgDual{
+        width: 90%;
+    }
 }
 
 @media screen and (max-width:500px){
@@ -456,6 +499,12 @@ font-size: 40px;
         width: 100%;
     }
     .contacto-usuario{
+        width: 90%;
+    }
+    .historiaHijoTxt{
+        width: 90%;
+    }
+    .historiaHijoImg{
         width: 90%;
     }
 }
