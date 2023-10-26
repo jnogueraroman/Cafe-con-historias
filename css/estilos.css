@@ -174,22 +174,32 @@ textarea{
     justify-content: space-around;
 }
 .historiaHijoTxt{
-    width: 58%;
-}
-.historiaHijoImg{
-    width: 40%;
+    width: 52%;
 }
 .historiaHijoTxtGde{
-    width: 100%;
+    width: 90%;
+}
+
+.historiaHijoImg{
+    width: 42%;
 }
 .historiaHijoImgGde{
     width: 90%;
 }
 .historiaHijoImgDual{
-    width: 48%;
+    width: 48%;  
+    margin-bottom: 2%;
 }
 
-.historiaHijoTxt, .historiaHijoTxtGde p{
+
+.historiaHijoTxtGde p{
+    padding: 1vh;
+    text-align: justify;
+    color: chocolate;
+    font-weight: 500;
+    font-size: 1em;
+}
+.historiaHijoTxt p{
     padding: 1vh;
     text-align: justify;
     color: chocolate;
@@ -199,6 +209,7 @@ textarea{
 
 .historiaHijoImg img{
     max-width: 100%;
+    
 }
 .historiaHijoImgGde img{
     max-width: 100%;
