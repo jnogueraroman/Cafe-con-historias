@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initialscale=1.0">
+    <title>Modificar reservas</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <h1 class="subtitulo">Modificar reservas</h1>
+   
+    <div id="app">
+        <form @submit.prevent="obtenerReserva">
+            <label for="telefono">Telefono:</label>
+            <input type="number" v-model="telefono" required><br>
+            <button type="submit">Modificar reserva</button>
+            <a href="organizador.html">Menu</a>
+        </form>
+        <div v-if="mostrarDatosReserva">
+            <h2>Datos de la reserva</h2>
+            <form @submit.prevent="guardarCambios">
+                <label for="nombreModificar">Nombre:</label>
+                <input type="text" id="nombreModificar" v-model="nombre" required><br>
+                <label for="cantidadModificar">Cantidad:</label>
+                <input type="number" id="cantidadModificar" v-model="cantidad" required><br>
+                <label for="emailModificar">Email:</label>
+                <input type="email" id="emailModificar" v-model="email" required><br>
+
+                <button type="submit">Guardar Cambios</button>
+                <a href="modificar_reserva.html">Cancelar</a>
+            </form>
+        </div>
+    </div>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="script.js/modificar.js"></script>
+</body>
+
+</html>

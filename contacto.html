@@ -36,24 +36,26 @@
             
                     
                 <div class="contactoHijo">
-                    <form action="" method="post" id="form">
+                    <form action="" method="post" id="form" enctype="multipart/form-data">
                         
 
                             
-                            <input type="text" name="" id="nombre">
-                            <label for="">Nombre</label>
+                            <input type="text" name="nombre" id="nombre" required>
+                            <label for="nombre">Nombre</label>
                        
-                            <input type="number" name="" id="telefono">
-                            <label for="">Telefono</label>
+                            <input type="number" name="telefono" id="telefono" required>
+                            <label for="telefono">Telefono</label>
                         
-                            <input type="number" name="" id="cantidad">
-                            <label for="">Numero de personas</label>
+                            <input type="number" name="cantidad" id="cantidad" required>
+                            <label for="cantidad">Numero de personas</label>
                        
-                            <input type="email" name="" id="email">
-                            <label for="">Correo</label>
+                            <input type="email" name="email" id="email" required>
+                            <label for="email">Correo</label>
                         
                             <br><br>
                         <button type="submit" class="btn-color btn">Reservar</button>
+                        <br>
+                        <a href="organizador.html">Menu</a>
 
                         <p class="warnings" id="warnings"></p>
 
@@ -112,6 +114,7 @@
      <script src="script.js/pagina.js"></script>
      <script src="script.js/ligtbox.js"></script>
      <script src="script.js/Formulario.js"></script>
+     <script src="script.js/reservas.js"></script>
 
     
 </body>

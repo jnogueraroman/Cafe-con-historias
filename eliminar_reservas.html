@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initialscale=1.0">
+    <title>Reservas</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <h1 class="subtitulo">Eliminar reservas</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Telefono</th>
+                <th align="right">Cantidad</th>
+                <th >Email</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr v-for="reserva in reservas">
+                <td>{{ reserva.nombre }}</td>
+                <td>{{ reserva.telefono }}</td>
+                <td align="right">{{ reserva.cantidad }}</td>
+                <td>{{ reserva.email }}</td>
+                <td><button @click="eliminarReserva(reserva.telefono)">Eliminar</button></td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="contenedor-centrado">
+        <a href="organizador.html">Menu</a>
+    </div>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="script.js/eliminar_reserva.js"></script>
+</body>
+
+</html>
