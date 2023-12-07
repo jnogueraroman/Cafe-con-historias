@@ -105,9 +105,10 @@ class Lista:
 #---------------------------------------------------------------------------------------------------
 # Instancio la clase:
 
-lista = Lista(host='localhost', user='root', password='', database='mis_reservas')
+#lista = Lista(host='localhost', user='root', password='', database='mis_reservas')
+lista = Lista(host='jnogueraroman.mysql.pythonanywhere-services.com', user='jnogueraroman', password='python1234', database='jnogueraroman$mis_reservas')
 
-ruta_destino = './static/imagenes/'
+
 
 #--------------------------------------------------------------------------------------------------
 

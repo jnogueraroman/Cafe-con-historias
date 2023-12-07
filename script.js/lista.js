@@ -1,4 +1,6 @@
-const URL = "http://127.0.0.1:5000/"
+//const URL = "http://127.0.0.1:5000/"
+const URL = "https://jnogueraroman.pythonanywhere.com/"
+
 // Realizamos la solicitud GET al servidor para obtener todos las reservas
 fetch(URL + 'reservas')
 .then(function (response) {

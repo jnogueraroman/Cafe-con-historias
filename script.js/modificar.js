@@ -1,5 +1,5 @@
 //const URL = "http://127.0.0.1:5000/"
-const URL = "http://127.0.0.1:5000/"
+const URL = "https://jnogueraroman.pythonanywhere.com/"
 
 const app = Vue.createApp({
     data() {
